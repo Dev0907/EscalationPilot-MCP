@@ -1,97 +1,121 @@
-#EscalationPilot MCP
+Title: EscalationPilot MCP
 
-AI-Powered Customer Escalation Orchestration System
+AI Orchestration Infrastructure for Customer Risk & Escalation Management
 
-🚀 Overview
+🧩 The Problem
 
-EscalationPilot MCP is a multi-agent AI system built using Archestra to automate customer escalation triage in e-commerce operations.
+E-commerce companies process thousands of customer support tickets daily.
 
-It analyzes customer support tickets and produces a structured escalation report including:
+High-risk tickets involving:
 
-Sentiment classification
+Chargeback threats
 
-Urgency level
+Refund abuse
 
-Fraud risk detection
+Legal escalation
 
-Legal risk detection
+Public reputation damage
 
-Recommended internal action
+are often misclassified or handled too late.
 
-Draft response to customer
+Manual triage leads to:
 
-This project demonstrates real-world AI workflow orchestration using Pro-Agent + Sub-Agent architecture.
+Revenue leakage
 
-🧠 Architecture
+Legal exposure
 
-Pro Agent:
+Inconsistent customer communication
+
+Operational inefficiency
+
+AI is being adopted — but without structured orchestration, outputs are unreliable and non-deterministic.
+
+🚀 The Solution
+
+EscalationPilot MCP is a multi-agent orchestration system built on Archestra that transforms unstructured support tickets into structured, risk-aware escalation decisions.
+
+Instead of a single AI response, the system:
+
+Decomposes the ticket into analytical tasks
+
+Delegates to specialized sub-agents
+
+Detects sentiment, fraud risk, and legal exposure
+
+Applies policy-driven escalation logic
+
+Produces an operationally safe escalation report
+
+This mirrors how real enterprise escalation teams operate — but fully automated.
+
+🏗 Architecture
+
+EscalationPilot uses a Pro-Agent + Sub-Agent model:
+
+Pro Agent
 
 Escalation Orchestrator
 
-Sub Agents:
+Sub Agents
 
 Sentiment & Urgency Analyzer
 
-Risk Detector
+Risk Detection Engine
 
 Escalation Action Planner
 
-Workflow:
+Agents communicate via structured JSON outputs, ensuring deterministic and auditable workflow transitions.
 
-Customer Ticket
-→ Sentiment Analysis
-→ Risk Detection
-→ Action Planning
-→ Structured Escalation Report
+Built entirely using Archestra’s MCP-based multi-agent orchestration framework.
 
-⚙️ Built With
+⚙️ How Archestra Powers This
 
-Archestra multi-agent orchestration
+EscalationPilot leverages Archestra to:
 
-MCP agent coordination
+Define modular agent roles
 
-Structured JSON passing between agents
+Chain sub-agent execution
 
-Deterministic business logic enforcement
+Pass structured outputs between agents
 
-🎯 Problem Solved
+Enforce deterministic business logic
 
-E-commerce companies face:
+Coordinate multi-step decision workflows without backend infrastructure
 
-Escalation misclassification
+Archestra enables production-style AI orchestration using only composable agents.
 
-Fraud refund abuse
-
-Legal risk exposure
-
-Slow triage workflows
-
-EscalationPilot automates and standardizes escalation handling using AI orchestration.
-
-🧪 Example Test Case
+🎯 Example
 
 Input:
 
-"I will file a chargeback and take legal action if my refund is not processed immediately."
+"I will file a chargeback and contact my lawyer if this is not resolved today."
 
 Output:
 
 Sentiment: Aggressive
 
-Urgency: Critical
+Priority: Critical
 
 Fraud Risk: Yes
 
 Legal Risk: Yes
 
-Recommended Action: Immediate escalation
+Recommended Action: Immediate executive escalation
 
-🔮 Future Improvements
+Draft Response: Policy-aligned customer communication
 
-Real CRM integration
+💼 Business Impact
 
-Fraud score learning loop
+EscalationPilot enables:
 
-Analytics dashboard
+Faster resolution of high-risk tickets
 
-Real-time Slack escalation triggers
+Reduced fraud-related refund loss
+
+Early detection of legal escalation
+
+Standardized customer communication
+
+Structured audit trails
+
+This system demonstrates how MCP-based orchestration can power operational AI infrastructure at scale.
